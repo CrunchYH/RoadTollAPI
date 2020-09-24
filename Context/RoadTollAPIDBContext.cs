@@ -15,7 +15,7 @@ namespace RoadTollAPI.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // The database connection, the simple but bad way to include it
-            optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=RoadTollAPI;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS01;Database=STSDB;Trusted_Connection=True;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
